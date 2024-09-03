@@ -9,7 +9,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: ["http://192.168.1.5:5173", "http://localhost:5173"] }));
+app.use(cors({ origin: ["https://smartbiten.netlify.app/"] }));
 
 app.use("/", indexRouter);
 

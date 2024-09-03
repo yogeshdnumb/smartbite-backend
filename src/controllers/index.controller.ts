@@ -11,7 +11,7 @@ export async function postUpload(req: Request, res: Response) {
   if (req.file) {
     response = await getImgInfo(req.file?.buffer, req.file?.mimetype);
   }
-  console.log(response);
+  // console.log(response);
 
   res.json(response);
 }
